@@ -15,6 +15,6 @@ main()
 	printf("Enter value of E = ");
 	scanf("%d",&e);
 	
-	(a>b)?(a>c)?(a>d)?(a>e)?printf("A is maximum"):printf("E is maximum"):printf("D is maximum"):printf("C is maximum")
-		 :(b>c)?(b>d)?(b>e)?printf("B is maximum"):printf("E is maximum"):printf("D is maximum"):printf("C is maximum");
+(a>b) ? (a>c) ? (a>d) ? (a>e) ? printf("A is maximum") : printf("E is maximum") : (d>e) ? printf("D is maximum") : printf("E is maximum") : (c>d) ? (c>e) ? printf("C is maximum") : printf("E is maximum") : (d>e) ? printf("D is maximum") : printf("E is maximum")
+	      : (b>c) ? (b>d) ? (b>e) ? printf("B is maximum") : printf("E is maximum") : (d>e) ? printf("D is maximum") : printf("E is maximum") : (c>d) ? (c>e) ? printf("C is maximum") : printf("E is maximum") : (d>e) ? printf("D is maximum") : printf("E is maximum");
 }
